@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moment - Money Management</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo">Moment</div>
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="active" data-section="dashboard"
+              ><i>📊</i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#" data-section="transaksi"><i>💸</i> Transaksi</a>
+          </li>
+          <li>
+            <a href="#" data-section="tabungan"><i>💰</i> Tabungan</a>
+          </li>
+          <li>
+            <a href="#" data-section="investasi"><i>📈</i> Investasi</a>
+          </li>
+          <li>
+            <a href="#" data-section="laporan"><i>📋</i> Laporan</a>
+          </li>
+          <li>
+            <a href="#" data-section="profil"><i>👤</i> Profil</a>
+          </li>
+          <li>
+            <a href="#" id="logout-btn"><i>🚪</i> Logout</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="header">
+          <h1>Dashboard</h1>
+          <div class="user-info">
+            <img src="img/user-icon.svg" alt="User" />
+            <span></span>
+          </div>
+        </div>
+
+        <!-- Sections will be loaded dynamically -->
+        <div id="content-area"></div>
+      </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/transactions.js"></script>
+    <script src="js/savings.js"></script>
+    <script src="js/investments.js"></script>
+    <div id="modal-container"></div>
+  </body>
+</html>
